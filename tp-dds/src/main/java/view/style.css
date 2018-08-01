@@ -1,0 +1,274 @@
+@keyframes notificacion {
+    0%   {filter:blur(20px);}
+    100% {filter:blur(0px);}
+}
+
+body {
+	background-image: url("bg.png");
+	background-size: 100% auto;
+	padding: 100px;
+	height: 100vh;
+}
+
+button, input{
+	outline: none;
+}
+
+.selector, .map {
+	text-align: center;
+	padding: 20px 10px;
+}
+
+.mapSites {
+	border: 3px solid #8A4C4C;
+	width: 90%;
+	height: 500px;
+}
+
+.selector  p {
+	color: white;
+	font-size: 1em;
+}
+
+.selector button {
+	color: white;
+	background: #8A4C4C;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	padding: 10px;
+}
+
+.selector button:hover {
+	border: 3px solid #8A4C4C;
+	background: transparent;
+	color: #8A4C4C;
+	transition: all 0.5s;
+}
+
+.searchPoi {
+	padding: 10px;
+	margin: 5px 5px;
+	background: rgba(0, 0, 0, 0.5)
+}
+
+.icon-login{
+	background: rgba(257, 45, 45, 0.5);
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 1em;
+	border: none;
+}
+
+.icon-login:hover{
+		background: rgba(257, 45, 45, 0.2);
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0,0,0,.7);
+	animation-name: notificacion;
+	animation-duration: .8s;
+}
+
+.modal-inner{
+	padding: 20px;
+	background: white;
+	opacity: 1;
+	width: 300px;
+	height: 120px;
+	margin-top: 30%;
+	text-align: center;
+	border: 1px solid rgba(257, 45, 45, 1);
+}
+
+.modal-inner p{
+	font-size: 1.3em;
+	color: rgba(257, 45, 45, 1);
+
+}
+
+.log-button{
+	margin: 10px 0px;
+	border: none;
+	border-radius: 2px;
+
+}
+
+.log-input{
+	width: 25%;
+	margin: 10px 0px;
+	border: 1px solid #8A4C4C;
+	border-radius: 2px;
+
+}
+
+footer{
+	position: absolute;
+	bottom:0;
+	color: white;
+	padding: 10px 10px;
+}
+
+.volver{
+	display: none;
+	text-align: left;
+	background: rgba(41, 72, 125,1);
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 1em;
+	border: none;
+	margin: 10px;
+}
+
+#historial,  #acciones{
+	display: none;
+	background-color: rgba(00,00,00,.7);
+	padding: 20px;
+	color: white;
+}
+
+
+ h1, h2{
+	 color:white;
+ }
+
+ h2{
+	 font-size: 20px;
+ }
+
+.busqueda button{
+	background: rgba(150, 60, 70,1);
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 1em;
+	border: none;
+	display: inline-block;
+}
+
+.busqueda{
+	background-color: rgba(00,00,00,.7);
+	padding: 10px;
+}
+
+.namecol{
+	background-color: gray;
+	color: black !important;
+	padding: 5px;
+}
+
+.second-block p{
+	color:white;
+}
+
+.button-admin{
+	text-align: center;
+}
+
+.button-admin button{
+	background: rgba(41, 72, 125,1);
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	font-size: 1em;
+	border: none;
+	display: inline-block;
+	margin: 10px;
+
+}
+
+#addPermiso,  #deletePermiso, #submitHis, #cancelHis, #searchAc{
+
+	text-align: center;
+	background: rgba(41, 72, 125,1);
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	font-size: 1em;
+	border: none;
+	margin: 10px;
+}
+
+.accept{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.permisoAdded{
+	display: inline-block;
+}
+
+
+#initFecha, #finFecha, #nameUser{
+	color: black;
+}
+
+.img-poi{
+	height: 60px;
+	width: 100px;
+	padding-bottom: 10px;
+}
+
+.col{
+	padding:0;
+}
+
+
+.poiToShow{
+	background-color: rgba(41, 72, 125,1);
+}
+
+.poiToShow:hover{
+	cursor: pointer;
+}
+
+#icono{
+	width: 40px;
+	height: 40px;
+
+}
+.welcome, .eleccion{
+	text-align: center;
+	width: auto;
+	margin-bottom: 10%;
+}
+.welcome h1{
+	display: inline;
+	margin-top: 10px;
+}
+
+.eleccion h2{
+	opacity: 0.5;
+}
+
+.close-sesion{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.black{
+	color: black;
+  background-color: white;
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 767px){
+	.log-input {
+	    width: 80%;
+	}
+	#content{
+		margin-bottom: 10px;
+	}
+
+
+
+
+
+}
